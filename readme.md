@@ -77,3 +77,7 @@ demo地址: [https://github.com/seedotlee/AlipayIndexDemo](https://github.com/se
 ```
 
 这里的关键就是当想上滑动的时候，实际就是滑动最外层的scrollview，然而想下滑动到顶的时候仅仅只讲offset传递给tableview让其继续滚动。
+
+tableview嵌入方式借鉴了：
+
+https://github.com/Zhanggaoyi92/Alipay-8.11-update-demo
