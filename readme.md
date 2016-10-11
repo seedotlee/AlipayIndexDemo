@@ -4,7 +4,7 @@
 
 今天这里不是来评论支付宝功能的，而是作为一个iOS开发人员在使用的过程中发现，首页这滑动好“怪异”啊~~
 
-![](http://)
+![](http://odumpn7vt.bkt.clouddn.com/Screen%20Shot%202016-10-11%20at%202.53.08%20PM.png)
 
 首先，右侧的滚动条的位置好怪！为什么在中间？只能说明一个问题，这个tableview是从这里开始的。
 
@@ -15,9 +15,13 @@
 
 通过上面种种奇怪的现象，于是我决定针对这个效果些一个demo来玩玩。
 
-![](http://)
+![](http://odumpn7vt.bkt.clouddn.com/aplipayindexdemo.gif)
 
-demo地址: [](http://github/seedotlee/)
+> (最后闪的那几下请忽略，gif图片没有做完美，并不是demo的bug。。。。)
+
+demo地址: [https://github.com/seedotlee/AlipayIndexDemo](https://github.com/seedotlee/AlipayIndexDemo)
+
+因为是demo嘛，所以代码就尽量简单，处理就基本只放在一个class中，这样比较容易理解，大家就不要吐槽这一块了~~~
 
 ## 关键点
 
