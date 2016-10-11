@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AlipayDemo
 //
-//  Created by Lanmeihui on 10/9/16.
+//  Created by See on 10/9/16.
 //  Copyright © 2016 See. All rights reserved.
 //
 

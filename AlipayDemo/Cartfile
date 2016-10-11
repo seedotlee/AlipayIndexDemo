@@ -1,0 +1,19 @@
+
+# 必须最低 2.3.1 版本
+# >= 2.3.1
+
+# 必须 1.x 版本
+# ~>1.0
+
+# 必须 0.4.1 版本
+# == 0.4.1
+
+# 使用最新版本
+# "xxx/xxx"
+
+# 使用git源
+# git "url" "branch"
+
+github "seedotlee/MJRefresh" "new-version"
+
+

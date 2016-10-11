@@ -1,0 +1,436 @@
+BCSymbolMap Version: 2.0
+-[MJRefreshAutoFooter willMoveToSuperview:]
+-[MJRefreshAutoFooter setAppearencePercentTriggerAutoRefresh:]
+-[MJRefreshAutoFooter appearencePercentTriggerAutoRefresh]
+-[MJRefreshAutoFooter prepare]
+-[MJRefreshAutoFooter scrollViewContentSizeDidChange:]
+-[MJRefreshAutoFooter scrollViewContentOffsetDidChange:]
+-[MJRefreshAutoFooter scrollViewPanStateDidChange:]
+-[MJRefreshAutoFooter setState:]
+___32-[MJRefreshAutoFooter setState:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[MJRefreshAutoFooter setHidden:]
+-[MJRefreshAutoFooter isAutomaticallyRefresh]
+-[MJRefreshAutoFooter setAutomaticallyRefresh:]
+-[MJRefreshAutoFooter triggerAutomaticallyRefreshPercent]
+-[MJRefreshAutoFooter setTriggerAutomaticallyRefreshPercent:]
+___block_descriptor_tmp
+_OBJC_IVAR_$_MJRefreshAutoFooter._automaticallyRefresh
+_OBJC_IVAR_$_MJRefreshAutoFooter._triggerAutomaticallyRefreshPercent
+Apple LLVM version 8.0.0 (clang-800.0.38)
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshAutoFooter.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshAutoFooter.h
+__destroy_helper_block_
+__copy_helper_block_
+__32-[MJRefreshAutoFooter setState:]_block_invoke
+-[MJRefreshBackFooter willMoveToSuperview:]
+-[MJRefreshBackFooter scrollViewContentOffsetDidChange:]
+-[MJRefreshBackFooter scrollViewContentSizeDidChange:]
+-[MJRefreshBackFooter setState:]
+___32-[MJRefreshBackFooter setState:]_block_invoke
+___32-[MJRefreshBackFooter setState:]_block_invoke.43
+___copy_helper_block_.46
+___destroy_helper_block_.47
+___32-[MJRefreshBackFooter setState:]_block_invoke.62
+___copy_helper_block_.65
+___destroy_helper_block_.66
+___32-[MJRefreshBackFooter setState:]_block_invoke.68
+___copy_helper_block_.71
+___destroy_helper_block_.72
+-[MJRefreshBackFooter endRefreshing]
+___36-[MJRefreshBackFooter endRefreshing]_block_invoke
+___copy_helper_block_.74
+___destroy_helper_block_.75
+-[MJRefreshBackFooter endRefreshingWithNoMoreData]
+___50-[MJRefreshBackFooter endRefreshingWithNoMoreData]_block_invoke
+___copy_helper_block_.77
+___destroy_helper_block_.78
+-[MJRefreshBackFooter heightForContentBreakView]
+-[MJRefreshBackFooter happenOffsetY]
+-[MJRefreshBackFooter lastRefreshCount]
+-[MJRefreshBackFooter setLastRefreshCount:]
+-[MJRefreshBackFooter lastBottomDelta]
+-[MJRefreshBackFooter setLastBottomDelta:]
+___block_descriptor_tmp.49
+___block_descriptor_tmp.67
+___block_descriptor_tmp.73
+___block_descriptor_tmp.76
+___block_descriptor_tmp.79
+_OBJC_IVAR_$_MJRefreshBackFooter._lastRefreshCount
+_OBJC_IVAR_$_MJRefreshBackFooter._lastBottomDelta
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshBackFooter.m
+__50-[MJRefreshBackFooter endRefreshingWithNoMoreData]_block_invoke
+__36-[MJRefreshBackFooter endRefreshing]_block_invoke
+__32-[MJRefreshBackFooter setState:]_block_invoke.68
+__32-[MJRefreshBackFooter setState:]_block_invoke.62
+__32-[MJRefreshBackFooter setState:]_block_invoke.43
+__32-[MJRefreshBackFooter setState:]_block_invoke
+-[MJRefreshComponent initWithFrame:]
+-[MJRefreshComponent prepare]
+-[MJRefreshComponent layoutSubviews]
+-[MJRefreshComponent placeSubviews]
+-[MJRefreshComponent willMoveToSuperview:]
+-[MJRefreshComponent drawRect:]
+-[MJRefreshComponent addObservers]
+-[MJRefreshComponent removeObservers]
+-[MJRefreshComponent observeValueForKeyPath:ofObject:change:context:]
+-[MJRefreshComponent scrollViewContentOffsetDidChange:]
+-[MJRefreshComponent scrollViewContentSizeDidChange:]
+-[MJRefreshComponent scrollViewPanStateDidChange:]
+-[MJRefreshComponent setRefreshingTarget:refreshingAction:]
+-[MJRefreshComponent setState:]
+___31-[MJRefreshComponent setState:]_block_invoke
+-[MJRefreshComponent beginRefreshing]
+___37-[MJRefreshComponent beginRefreshing]_block_invoke
+___copy_helper_block_.75
+___destroy_helper_block_.76
+-[MJRefreshComponent beginRefreshingWithCompletionBlock:]
+-[MJRefreshComponent endRefreshing]
+-[MJRefreshComponent endRefreshingWithCompletionBlock:]
+-[MJRefreshComponent isRefreshing]
+-[MJRefreshComponent setAutoChangeAlpha:]
+-[MJRefreshComponent isAutoChangeAlpha]
+-[MJRefreshComponent setAutomaticallyChangeAlpha:]
+-[MJRefreshComponent setPullingPercent:]
+-[MJRefreshComponent executeRefreshingCallback]
+___47-[MJRefreshComponent executeRefreshingCallback]_block_invoke
+___copy_helper_block_.112
+___destroy_helper_block_.113
+-[MJRefreshComponent refreshingBlock]
+-[MJRefreshComponent setRefreshingBlock:]
+-[MJRefreshComponent refreshingTarget]
+-[MJRefreshComponent setRefreshingTarget:]
+-[MJRefreshComponent refreshingAction]
+-[MJRefreshComponent setRefreshingAction:]
+-[MJRefreshComponent beginRefreshingCompletionBlock]
+-[MJRefreshComponent setBeginRefreshingCompletionBlock:]
+-[MJRefreshComponent endRefreshingCompletionBlock]
+-[MJRefreshComponent setEndRefreshingCompletionBlock:]
+-[MJRefreshComponent state]
+-[MJRefreshComponent scrollViewOriginalInset]
+-[MJRefreshComponent scrollView]
+-[MJRefreshComponent pullingPercent]
+-[MJRefreshComponent isAutomaticallyChangeAlpha]
+-[MJRefreshComponent pan]
+-[MJRefreshComponent setPan:]
+-[MJRefreshComponent .cxx_destruct]
++[UILabel(MJRefresh) mj_label]
+-[UILabel(MJRefresh) mj_textWith]
+_OBJC_IVAR_$_MJRefreshComponent._state
+___block_descriptor_tmp.77
+_OBJC_IVAR_$_MJRefreshComponent._automaticallyChangeAlpha
+_OBJC_IVAR_$_MJRefreshComponent._pullingPercent
+___block_descriptor_tmp.114
+_OBJC_IVAR_$_MJRefreshComponent._refreshingBlock
+_OBJC_IVAR_$_MJRefreshComponent._refreshingTarget
+_OBJC_IVAR_$_MJRefreshComponent._refreshingAction
+_OBJC_IVAR_$_MJRefreshComponent._beginRefreshingCompletionBlock
+_OBJC_IVAR_$_MJRefreshComponent._endRefreshingCompletionBlock
+_OBJC_IVAR_$_MJRefreshComponent._pan
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshComponent.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshComponent.h
+__47-[MJRefreshComponent executeRefreshingCallback]_block_invoke
+__37-[MJRefreshComponent beginRefreshing]_block_invoke
+__31-[MJRefreshComponent setState:]_block_invoke
++[MJRefreshFooter footerWithRefreshingBlock:]
++[MJRefreshFooter footerWithRefreshingTarget:refreshingAction:]
+-[MJRefreshFooter prepare]
+-[MJRefreshFooter willMoveToSuperview:]
+___39-[MJRefreshFooter willMoveToSuperview:]_block_invoke
+-[MJRefreshFooter endRefreshingWithNoMoreData]
+-[MJRefreshFooter noticeNoMoreData]
+-[MJRefreshFooter resetNoMoreData]
+-[MJRefreshFooter ignoredScrollViewContentInsetBottom]
+-[MJRefreshFooter setIgnoredScrollViewContentInsetBottom:]
+-[MJRefreshFooter isAutomaticallyHidden]
+-[MJRefreshFooter setAutomaticallyHidden:]
+_OBJC_IVAR_$_MJRefreshFooter._ignoredScrollViewContentInsetBottom
+_OBJC_IVAR_$_MJRefreshFooter._automaticallyHidden
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshFooter.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshFooter.h
+__39-[MJRefreshFooter willMoveToSuperview:]_block_invoke
++[MJRefreshHeader headerWithRefreshingBlock:]
++[MJRefreshHeader headerWithRefreshingTarget:refreshingAction:]
+-[MJRefreshHeader prepare]
+-[MJRefreshHeader placeSubviews]
+-[MJRefreshHeader scrollViewContentOffsetDidChange:]
+-[MJRefreshHeader setState:]
+___28-[MJRefreshHeader setState:]_block_invoke
+___28-[MJRefreshHeader setState:]_block_invoke.67
+___copy_helper_block_.70
+___destroy_helper_block_.71
+___28-[MJRefreshHeader setState:]_block_invoke.76
+___28-[MJRefreshHeader setState:]_block_invoke_2
+___copy_helper_block_.79
+___destroy_helper_block_.80
+___28-[MJRefreshHeader setState:]_block_invoke.82
+___copy_helper_block_.85
+___destroy_helper_block_.86
+___copy_helper_block_.88
+___destroy_helper_block_.89
+-[MJRefreshHeader endRefreshing]
+___32-[MJRefreshHeader endRefreshing]_block_invoke
+___copy_helper_block_.91
+___destroy_helper_block_.92
+-[MJRefreshHeader lastUpdatedTime]
+-[MJRefreshHeader lastUpdatedTimeKey]
+-[MJRefreshHeader setLastUpdatedTimeKey:]
+-[MJRefreshHeader ignoredScrollViewContentInsetTop]
+-[MJRefreshHeader setIgnoredScrollViewContentInsetTop:]
+-[MJRefreshHeader insetTDelta]
+-[MJRefreshHeader setInsetTDelta:]
+-[MJRefreshHeader .cxx_destruct]
+___block_descriptor_tmp.81
+___block_descriptor_tmp.87
+___block_descriptor_tmp.90
+___block_descriptor_tmp.93
+_OBJC_IVAR_$_MJRefreshHeader._lastUpdatedTimeKey
+_OBJC_IVAR_$_MJRefreshHeader._ignoredScrollViewContentInsetTop
+_OBJC_IVAR_$_MJRefreshHeader._insetTDelta
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshHeader.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Base/MJRefreshHeader.h
+__32-[MJRefreshHeader endRefreshing]_block_invoke
+__28-[MJRefreshHeader setState:]_block_invoke.82
+__28-[MJRefreshHeader setState:]_block_invoke_2
+__28-[MJRefreshHeader setState:]_block_invoke.76
+__28-[MJRefreshHeader setState:]_block_invoke.67
+__28-[MJRefreshHeader setState:]_block_invoke
+-[MJRefreshAutoGifFooter gifView]
+-[MJRefreshAutoGifFooter stateImages]
+-[MJRefreshAutoGifFooter stateDurations]
+-[MJRefreshAutoGifFooter setImages:duration:forState:]
+-[MJRefreshAutoGifFooter setImages:forState:]
+-[MJRefreshAutoGifFooter prepare]
+-[MJRefreshAutoGifFooter placeSubviews]
+-[MJRefreshAutoGifFooter setState:]
+-[MJRefreshAutoGifFooter setStateImages:]
+-[MJRefreshAutoGifFooter setStateDurations:]
+-[MJRefreshAutoGifFooter .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshAutoGifFooter._gifView
+_OBJC_IVAR_$_MJRefreshAutoGifFooter._stateImages
+_OBJC_IVAR_$_MJRefreshAutoGifFooter._stateDurations
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m
+-[MJRefreshAutoNormalFooter loadingView]
+-[MJRefreshAutoNormalFooter setActivityIndicatorViewStyle:]
+-[MJRefreshAutoNormalFooter prepare]
+-[MJRefreshAutoNormalFooter placeSubviews]
+-[MJRefreshAutoNormalFooter setState:]
+-[MJRefreshAutoNormalFooter activityIndicatorViewStyle]
+-[MJRefreshAutoNormalFooter setLoadingView:]
+-[MJRefreshAutoNormalFooter .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshAutoNormalFooter._loadingView
+_OBJC_IVAR_$_MJRefreshAutoNormalFooter._activityIndicatorViewStyle
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h
+-[MJRefreshAutoStateFooter stateTitles]
+-[MJRefreshAutoStateFooter stateLabel]
+-[MJRefreshAutoStateFooter setTitle:forState:]
+-[MJRefreshAutoStateFooter stateLabelClick]
+-[MJRefreshAutoStateFooter prepare]
+-[MJRefreshAutoStateFooter placeSubviews]
+-[MJRefreshAutoStateFooter setState:]
+-[MJRefreshAutoStateFooter labelLeftInset]
+-[MJRefreshAutoStateFooter setLabelLeftInset:]
+-[MJRefreshAutoStateFooter isRefreshingTitleHidden]
+-[MJRefreshAutoStateFooter setRefreshingTitleHidden:]
+-[MJRefreshAutoStateFooter setStateTitles:]
+-[MJRefreshAutoStateFooter .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshAutoStateFooter._stateTitles
+_OBJC_IVAR_$_MJRefreshAutoStateFooter._stateLabel
+_OBJC_IVAR_$_MJRefreshAutoStateFooter._labelLeftInset
+_OBJC_IVAR_$_MJRefreshAutoStateFooter._refreshingTitleHidden
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h
+-[MJRefreshBackGifFooter gifView]
+-[MJRefreshBackGifFooter stateImages]
+-[MJRefreshBackGifFooter stateDurations]
+-[MJRefreshBackGifFooter setImages:duration:forState:]
+-[MJRefreshBackGifFooter setImages:forState:]
+-[MJRefreshBackGifFooter prepare]
+-[MJRefreshBackGifFooter setPullingPercent:]
+-[MJRefreshBackGifFooter placeSubviews]
+-[MJRefreshBackGifFooter setState:]
+-[MJRefreshBackGifFooter setStateImages:]
+-[MJRefreshBackGifFooter setStateDurations:]
+-[MJRefreshBackGifFooter .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshBackGifFooter._gifView
+_OBJC_IVAR_$_MJRefreshBackGifFooter._stateImages
+_OBJC_IVAR_$_MJRefreshBackGifFooter._stateDurations
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m
+-[MJRefreshBackNormalFooter arrowView]
+-[MJRefreshBackNormalFooter loadingView]
+-[MJRefreshBackNormalFooter setActivityIndicatorViewStyle:]
+-[MJRefreshBackNormalFooter prepare]
+-[MJRefreshBackNormalFooter placeSubviews]
+-[MJRefreshBackNormalFooter setState:]
+___38-[MJRefreshBackNormalFooter setState:]_block_invoke
+___38-[MJRefreshBackNormalFooter setState:]_block_invoke.66
+___38-[MJRefreshBackNormalFooter setState:]_block_invoke.77
+___copy_helper_block_.78
+___destroy_helper_block_.79
+___38-[MJRefreshBackNormalFooter setState:]_block_invoke.83
+___copy_helper_block_.84
+___destroy_helper_block_.85
+-[MJRefreshBackNormalFooter activityIndicatorViewStyle]
+-[MJRefreshBackNormalFooter setLoadingView:]
+-[MJRefreshBackNormalFooter .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshBackNormalFooter._arrowView
+_OBJC_IVAR_$_MJRefreshBackNormalFooter._loadingView
+_OBJC_IVAR_$_MJRefreshBackNormalFooter._activityIndicatorViewStyle
+___block_descriptor_tmp.74
+___block_descriptor_tmp.80
+___block_descriptor_tmp.86
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h
+__38-[MJRefreshBackNormalFooter setState:]_block_invoke.83
+__38-[MJRefreshBackNormalFooter setState:]_block_invoke.77
+__38-[MJRefreshBackNormalFooter setState:]_block_invoke.66
+__38-[MJRefreshBackNormalFooter setState:]_block_invoke
+-[MJRefreshBackStateFooter stateTitles]
+-[MJRefreshBackStateFooter stateLabel]
+-[MJRefreshBackStateFooter setTitle:forState:]
+-[MJRefreshBackStateFooter titleForState:]
+-[MJRefreshBackStateFooter prepare]
+-[MJRefreshBackStateFooter placeSubviews]
+-[MJRefreshBackStateFooter setState:]
+-[MJRefreshBackStateFooter labelLeftInset]
+-[MJRefreshBackStateFooter setLabelLeftInset:]
+-[MJRefreshBackStateFooter setStateTitles:]
+-[MJRefreshBackStateFooter .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshBackStateFooter._stateTitles
+_OBJC_IVAR_$_MJRefreshBackStateFooter._stateLabel
+_OBJC_IVAR_$_MJRefreshBackStateFooter._labelLeftInset
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h
+-[MJRefreshGifHeader gifView]
+-[MJRefreshGifHeader stateImages]
+-[MJRefreshGifHeader stateDurations]
+-[MJRefreshGifHeader setImages:duration:forState:]
+-[MJRefreshGifHeader setImages:forState:]
+-[MJRefreshGifHeader prepare]
+-[MJRefreshGifHeader setPullingPercent:]
+-[MJRefreshGifHeader placeSubviews]
+-[MJRefreshGifHeader setState:]
+-[MJRefreshGifHeader setStateImages:]
+-[MJRefreshGifHeader setStateDurations:]
+-[MJRefreshGifHeader .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshGifHeader._gifView
+_OBJC_IVAR_$_MJRefreshGifHeader._stateImages
+_OBJC_IVAR_$_MJRefreshGifHeader._stateDurations
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Header/MJRefreshGifHeader.m
+-[MJRefreshNormalHeader arrowView]
+-[MJRefreshNormalHeader loadingView]
+-[MJRefreshNormalHeader setActivityIndicatorViewStyle:]
+-[MJRefreshNormalHeader prepare]
+-[MJRefreshNormalHeader placeSubviews]
+-[MJRefreshNormalHeader setState:]
+___34-[MJRefreshNormalHeader setState:]_block_invoke
+___34-[MJRefreshNormalHeader setState:]_block_invoke.68
+___copy_helper_block_.73
+___destroy_helper_block_.74
+___34-[MJRefreshNormalHeader setState:]_block_invoke.79
+___copy_helper_block_.80
+___destroy_helper_block_.81
+___34-[MJRefreshNormalHeader setState:]_block_invoke.85
+___copy_helper_block_.86
+___destroy_helper_block_.87
+-[MJRefreshNormalHeader activityIndicatorViewStyle]
+-[MJRefreshNormalHeader setLoadingView:]
+-[MJRefreshNormalHeader .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshNormalHeader._arrowView
+_OBJC_IVAR_$_MJRefreshNormalHeader._loadingView
+_OBJC_IVAR_$_MJRefreshNormalHeader._activityIndicatorViewStyle
+___block_descriptor_tmp.82
+___block_descriptor_tmp.88
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Header/MJRefreshNormalHeader.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Header/MJRefreshNormalHeader.h
+__34-[MJRefreshNormalHeader setState:]_block_invoke.85
+__34-[MJRefreshNormalHeader setState:]_block_invoke.79
+__34-[MJRefreshNormalHeader setState:]_block_invoke.68
+__34-[MJRefreshNormalHeader setState:]_block_invoke
+-[MJRefreshStateHeader stateTitles]
+-[MJRefreshStateHeader stateLabel]
+-[MJRefreshStateHeader lastUpdatedTimeLabel]
+-[MJRefreshStateHeader setTitle:forState:]
+-[MJRefreshStateHeader currentCalendar]
+-[MJRefreshStateHeader setLastUpdatedTimeKey:]
+-[MJRefreshStateHeader prepare]
+-[MJRefreshStateHeader placeSubviews]
+-[MJRefreshStateHeader setState:]
+-[MJRefreshStateHeader lastUpdatedTimeText]
+-[MJRefreshStateHeader setLastUpdatedTimeText:]
+-[MJRefreshStateHeader labelLeftInset]
+-[MJRefreshStateHeader setLabelLeftInset:]
+-[MJRefreshStateHeader setStateTitles:]
+-[MJRefreshStateHeader .cxx_destruct]
+_OBJC_IVAR_$_MJRefreshStateHeader._stateTitles
+_OBJC_IVAR_$_MJRefreshStateHeader._stateLabel
+_OBJC_IVAR_$_MJRefreshStateHeader._lastUpdatedTimeLabel
+_OBJC_IVAR_$_MJRefreshStateHeader._lastUpdatedTimeText
+_OBJC_IVAR_$_MJRefreshStateHeader._labelLeftInset
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Header/MJRefreshStateHeader.m
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/Custom/Header/MJRefreshStateHeader.h
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/MJRefreshConst.m
+-[UIScrollView(MJExtension) setMj_insetT:]
+-[UIScrollView(MJExtension) mj_insetT]
+-[UIScrollView(MJExtension) setMj_insetB:]
+-[UIScrollView(MJExtension) mj_insetB]
+-[UIScrollView(MJExtension) setMj_insetL:]
+-[UIScrollView(MJExtension) mj_insetL]
+-[UIScrollView(MJExtension) setMj_insetR:]
+-[UIScrollView(MJExtension) mj_insetR]
+-[UIScrollView(MJExtension) setMj_offsetX:]
+-[UIScrollView(MJExtension) mj_offsetX]
+-[UIScrollView(MJExtension) setMj_offsetY:]
+-[UIScrollView(MJExtension) mj_offsetY]
+-[UIScrollView(MJExtension) setMj_contentW:]
+-[UIScrollView(MJExtension) mj_contentW]
+-[UIScrollView(MJExtension) setMj_contentH:]
+-[UIScrollView(MJExtension) mj_contentH]
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/UIScrollView+MJExtension.m
++[NSObject(MJRefresh) exchangeInstanceMethod1:method2:]
++[NSObject(MJRefresh) exchangeClassMethod1:method2:]
+-[UIScrollView(MJRefresh) setMj_header:]
+-[UIScrollView(MJRefresh) mj_header]
+-[UIScrollView(MJRefresh) setMj_footer:]
+-[UIScrollView(MJRefresh) mj_footer]
+-[UIScrollView(MJRefresh) setFooter:]
+-[UIScrollView(MJRefresh) footer]
+-[UIScrollView(MJRefresh) setHeader:]
+-[UIScrollView(MJRefresh) header]
+-[UIScrollView(MJRefresh) mj_totalDataCount]
+-[UIScrollView(MJRefresh) setMj_reloadDataBlock:]
+-[UIScrollView(MJRefresh) mj_reloadDataBlock]
+-[UIScrollView(MJRefresh) executeReloadDataBlock]
++[UITableView(MJRefresh) load]
+-[UITableView(MJRefresh) mj_reloadData]
++[UICollectionView(MJRefresh) load]
+-[UICollectionView(MJRefresh) mj_reloadData]
+_MJRefreshHeaderKey
+_MJRefreshFooterKey
+_MJRefreshReloadDataBlockKey
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/UIScrollView+MJRefresh.m
+-[UIView(MJExtension) setMj_x:]
+-[UIView(MJExtension) mj_x]
+-[UIView(MJExtension) setMj_y:]
+-[UIView(MJExtension) mj_y]
+-[UIView(MJExtension) setMj_w:]
+-[UIView(MJExtension) mj_w]
+-[UIView(MJExtension) setMj_h:]
+-[UIView(MJExtension) mj_h]
+-[UIView(MJExtension) setMj_size:]
+-[UIView(MJExtension) mj_size]
+-[UIView(MJExtension) setMj_origin:]
+-[UIView(MJExtension) mj_origin]
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/UIView+MJExtension.m
++[NSBundle(MJRefresh) mj_refreshBundle]
++[NSBundle(MJRefresh) mj_arrowImage]
++[NSBundle(MJRefresh) mj_localizedStringForKey:]
++[NSBundle(MJRefresh) mj_localizedStringForKey:value:]
+_mj_refreshBundle.refreshBundle
+_mj_arrowImage.arrowImage
+_mj_localizedStringForKey:value:.bundle
+/Users/lmh/Documents/AlipayDemo/AlipayDemo/Carthage/Checkouts/MJRefresh/MJRefresh/NSBundle+MJRefresh.m
+/Users/lmh/Library/Developer/Xcode/DerivedData/MJRefreshExample-hfwrdqahqugtorgoeoieurxrodhs/Build/Intermediates/MJRefreshExample.build/Release-iphoneos/MJRefreshFramework.build/DerivedSources/MJRefresh_vers.c
