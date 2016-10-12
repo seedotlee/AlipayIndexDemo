@@ -18,11 +18,6 @@ let singleAppHeaderViewHeight:CGFloat = 60
 class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerDelegate {
     
     let topOffsetY = functionHeaderViewHeight + singleAppHeaderViewHeight
-    var scrollDistance:CGFloat = 0
-    
-    var lastContentOffset:CGFloat = 0
-    
-    var downwards:Bool = true
     
     lazy var mainScrollView: UIScrollView = {
     
@@ -30,7 +25,7 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
         
         let scroll = UIScrollView(frame: CGRect(x: 0, y: 64, width: SCREEN_WIDTH, height: height))
         scroll.delegate = self
-        scroll.contentSize = CGSize(width: SCREEN_WIDTH, height: 1000)
+        scroll.contentSize = CGSize(width: SCREEN_WIDTH, height: 100)
         scroll.scrollIndicatorInsets = UIEdgeInsets(top: 155, left: 0, bottom: 0, right: 0)
         return scroll
     }()
@@ -194,11 +189,33 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
         headerView.addSubview(functionHeaderView)
         headerView.addSubview(appHeaderView)
         mainScrollView.addSubview(mainTableView)
+        
+        mainTableView.changeContentSize = { [weak self] contentSize in
+            
+            guard let weak = self else {return}
+
+            weak.updateContentSize(size: contentSize)
+            
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.updateContentSize(size: self.mainTableView.contentSize)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateContentSize(size:CGSize) {
+        var contentSize = size
+        contentSize.height = contentSize.height + topOffsetY
+        mainScrollView.contentSize = contentSize
+        var newframe = mainTableView.frame
+        newframe.size.height = size.height
+        mainTableView.frame = newframe
     }
     
     func functionViewAnimation(offsetY y:CGFloat) {

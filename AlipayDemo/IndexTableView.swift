@@ -18,6 +18,10 @@ class IndexTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
         // Drawing code
     }
     */
+    var numberRows:Int = 50
+    
+    var changeContentSize:((_ contentSize:CGSize)->())?
+
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
@@ -29,12 +33,15 @@ class IndexTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
                 // Put your code which should be executed with a delay here
+                weak.numberRows += 10
                 weak.mj_header.endRefreshing()
+                weak.reloadData()
+                weak.changeContentSize?(weak.contentSize)
             })
         }
         
     }
-    
+        
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -48,12 +55,22 @@ class IndexTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
     //UITableViewDataSource
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") {
+            
+            cell.textLabel?.text = "\(indexPath.row) - reusablecell"
+            return cell
+        } else {
+            
+            let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+            cell.textLabel?.text = "\(indexPath.row)"
+            
+            return cell
+        }
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return numberRows
     }
 }
