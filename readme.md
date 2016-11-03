@@ -4,7 +4,7 @@
 
 今天这里不是来评论支付宝功能的，而是作为一个iOS开发人员在使用的过程中发现，首页这滑动好“怪异”啊~~
 
-![](http://odumpn7vt.bkt.clouddn.com/Screen%20Shot%202016-10-11%20at%202.53.08%20PM.png)
+![](http://odumpn7vt.bkt.clouddn.com/Screen%20Shot%202016-10-11%20at%20%20PM.png)
 
 首先，右侧的滚动条的位置好怪！为什么在中间？只能说明一个问题，这个tableview是从这里开始的。
 
