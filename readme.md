@@ -16,9 +16,7 @@
 通过上面种种奇怪的现象，于是我决定针对这个效果些一个demo来玩玩。
 
 
-![](http://odumpn7vt.bkt.clouddn.com/Kapture%202016-11-03%20at%2017.43.13.gif)
-
-> (最后闪的那几下请忽略，gif图片没有做完美，并不是demo的bug。。。。)
+![](http://odumpn7vt.bkt.clouddn.com/Kapture%202016-11-03%20at%2017.56.59.gif)
 
 demo地址: [https://github.com/seedotlee/AlipayIndexDemo](https://github.com/seedotlee/AlipayIndexDemo)
 
