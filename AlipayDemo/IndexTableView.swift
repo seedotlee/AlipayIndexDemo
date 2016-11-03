@@ -28,15 +28,15 @@ class IndexTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
         self.delegate = self
         self.dataSource = self
         self.rowHeight = (1000 - 140) / 20;
+        self.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         self.mj_header = MJRefreshNormalHeader { [weak self] in
             guard let weak = self else {return}
             
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
                 // Put your code which should be executed with a delay here
-                weak.numberRows += 10
                 weak.mj_header.endRefreshing()
                 weak.reloadData()
-                weak.changeContentSize?(weak.contentSize)
+
             })
         }
         
@@ -44,6 +44,14 @@ class IndexTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
         
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func loadeMoreData() {
+        
+        self.numberRows += 10
+        self.reloadData()
+        self.changeContentSize?(self.contentSize)
+
     }
     
     func setScrollViewContentOffSet(point:CGPoint) {

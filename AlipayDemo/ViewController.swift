@@ -197,6 +197,17 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
             weak.updateContentSize(size: contentSize)
             
         }
+        
+        self.mainScrollView.mj_footer = MJRefreshAutoNormalFooter { [weak self] in
+            guard let weak = self else {return}
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+
+                weak.mainScrollView.mj_footer.endRefreshing()
+                weak.mainTableView.loadeMoreData()
+            })
+        }
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -235,10 +246,14 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
     
         // 松手时判断是否刷新
         let y = scrollView.contentOffset.y;
+
+
         if y < -65 {
             self.mainTableView.mj_header.beginRefreshing()
         } else if y > 0 && y <= functionHeaderViewHeight {
             functionViewAnimation(offsetY: y)
+        } else if y > scrollView.contentSize.height {
+            
         }
 
     }
@@ -246,8 +261,7 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let y = scrollView.contentOffset.y
-        
-        if (y <= 0) {
+        if y <= 0 {
             var newFrame = self.headerView.frame
             newFrame.origin.y = y
             self.headerView.frame = newFrame
@@ -263,26 +277,34 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
             newFrame = self.functionHeaderView.frame
             newFrame.origin.y = 0
             self.functionHeaderView.frame = newFrame
-        } else {
+            
+        } else if  y > scrollView.contentSize.height - mainScrollView.frame.height {
+        
+//            self.mainTableView.setScrollViewContentOffSet(point: CGPoint(x: 0, y: y))
+
+            
+        } else if y < functionHeaderViewHeight && y > 0{
             //处理功能区隐藏和视差
             var newFrame = self.functionHeaderView.frame
             newFrame.origin.y = y/2
             self.functionHeaderView.frame = newFrame
+
+            //处理透明度
+            let alpha = (1 - y/functionHeaderViewHeight*2.5 ) > 0 ? (1 - y/functionHeaderViewHeight*2.5 ) : 0
+            
+            functionHeaderView.alpha = alpha
+            if alpha > 0.5 {
+                let newAlpha =  alpha*2 - 1
+                mainNavView.alpha = newAlpha
+                coverNavView.alpha = 0
+            } else {
+                let newAlpha =  alpha*2
+                mainNavView.alpha = 0
+                coverNavView.alpha = 1 - newAlpha
+            }
+
         }
         
-        //处理透明度
-        let alpha = (1 - y/functionHeaderViewHeight*2.5 ) > 0 ? (1 - y/functionHeaderViewHeight*2.5 ) : 0
-        
-        functionHeaderView.alpha = alpha
-        if alpha > 0.5 {
-            let newAlpha =  alpha*2 - 1
-            mainNavView.alpha = newAlpha
-            coverNavView.alpha = 0
-        } else {
-            let newAlpha =  alpha*2
-            mainNavView.alpha = 0
-            coverNavView.alpha = 1 - newAlpha
-        }
         
     }
     
