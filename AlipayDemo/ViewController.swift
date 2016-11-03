@@ -252,8 +252,6 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
             self.mainTableView.mj_header.beginRefreshing()
         } else if y > 0 && y <= functionHeaderViewHeight {
             functionViewAnimation(offsetY: y)
-        } else if y > scrollView.contentSize.height {
-            
         }
 
     }
@@ -277,11 +275,6 @@ class ViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerD
             newFrame = self.functionHeaderView.frame
             newFrame.origin.y = 0
             self.functionHeaderView.frame = newFrame
-            
-        } else if  y > scrollView.contentSize.height - mainScrollView.frame.height {
-        
-//            self.mainTableView.setScrollViewContentOffSet(point: CGPoint(x: 0, y: y))
-
             
         } else if y < functionHeaderViewHeight && y > 0{
             //处理功能区隐藏和视差

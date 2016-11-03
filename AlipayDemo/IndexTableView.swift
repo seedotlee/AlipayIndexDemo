@@ -32,7 +32,7 @@ class IndexTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
         self.mj_header = MJRefreshNormalHeader { [weak self] in
             guard let weak = self else {return}
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
                 // Put your code which should be executed with a delay here
                 weak.mj_header.endRefreshing()
                 weak.reloadData()

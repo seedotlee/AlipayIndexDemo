@@ -15,7 +15,8 @@
 
 通过上面种种奇怪的现象，于是我决定针对这个效果些一个demo来玩玩。
 
-![](http://odumpn7vt.bkt.clouddn.com/aplipayindexdemo.gif)
+
+![](http://odumpn7vt.bkt.clouddn.com/Kapture%202016-11-03%20at%2017.43.13.gif)
 
 > (最后闪的那几下请忽略，gif图片没有做完美，并不是demo的bug。。。。)
 
@@ -31,48 +32,50 @@ demo地址: [https://github.com/seedotlee/AlipayIndexDemo](https://github.com/se
 
 ```
 
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
-        let y = scrollView.contentOffset.y
+      let y = scrollView.contentOffset.y
+      if y <= 0 {
+          var newFrame = self.headerView.frame
+          newFrame.origin.y = y
+          self.headerView.frame = newFrame
 
-        if (y <= 0) {
-            var newFrame = self.headerView.frame
-            newFrame.origin.y = y
-            self.headerView.frame = newFrame
+          newFrame = self.mainTableView.frame
+          newFrame.origin.y = y + topOffsetY
+          self.mainTableView.frame = newFrame
 
-            newFrame = self.mainTableView.frame
-            newFrame.origin.y = y + topOffsetY
-            self.mainTableView.frame = newFrame
+          //偏移量给到tableview，tableview自己来滑动
+          self.mainTableView.setScrollViewContentOffSet(point: CGPoint(x: 0, y: y))
 
-            //偏移量给到tableview，tableview自己来滑动
-            self.mainTableView.setScrollViewContentOffSet(point: CGPoint(x: 0, y: y))
+          //功能区状态回归
+          newFrame = self.functionHeaderView.frame
+          newFrame.origin.y = 0
+          self.functionHeaderView.frame = newFrame
 
-            //功能区状态回归
-            newFrame = self.functionHeaderView.frame
-            newFrame.origin.y = 0
-            self.functionHeaderView.frame = newFrame
-        } else {
-            //处理功能区隐藏和视差
-            var newFrame = self.functionHeaderView.frame
-            newFrame.origin.y = y/2
-            self.functionHeaderView.frame = newFrame
-        }
+      } else if y < functionHeaderViewHeight && y > 0{
+          //处理功能区隐藏和视差
+          var newFrame = self.functionHeaderView.frame
+          newFrame.origin.y = y/2
+          self.functionHeaderView.frame = newFrame
 
-        //处理透明度
-        let alpha = (1 - y/functionHeaderViewHeight*2.5 ) > 0 ? (1 - y/functionHeaderViewHeight*2.5 ) : 0
+          //处理透明度
+          let alpha = (1 - y/functionHeaderViewHeight*2.5 ) > 0 ? (1 - y/functionHeaderViewHeight*2.5 ) : 0
 
-        functionHeaderView.alpha = alpha
-        if alpha > 0.5 {
-            let newAlpha =  alpha*2 - 1
-            mainNavView.alpha = newAlpha
-            coverNavView.alpha = 0
-        } else {
-            let newAlpha =  alpha*2
-            mainNavView.alpha = 0
-            coverNavView.alpha = 1 - newAlpha
-        }
+          functionHeaderView.alpha = alpha
+          if alpha > 0.5 {
+              let newAlpha =  alpha*2 - 1
+              mainNavView.alpha = newAlpha
+              coverNavView.alpha = 0
+          } else {
+              let newAlpha =  alpha*2
+              mainNavView.alpha = 0
+              coverNavView.alpha = 1 - newAlpha
+          }
 
-    }
+      }
+
+
+  }
 
 ```
 
